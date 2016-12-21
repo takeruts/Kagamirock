@@ -1,0 +1,324 @@
+@charset "utf-8";
+
+
+/* 基本レイアウト
+******************************/
+.wrapper {
+	width: 620px;
+}
+
+/* ヘッダー部分
+******************************/
+/* SNSピン */
+.snsPins {
+	width: 500px;
+}
+
+/* タイトル */
+.title img {
+	width: 500px;
+}
+
+/* ナビゲーションメニュー */
+.navigation {
+	margin: 0 auto;
+	width:500px;
+}
+.navigation ul {
+	font-size: 18px;
+}
+
+/* スライド設定
+******************************/
+.main_image {
+	height: 240px;
+	width:420px;
+}
+
+.mainPicPin {
+	width: 240px;
+}
+.mainPicPin img {
+	height: 35px;
+	width: 28px;
+}
+
+.main_image img {
+	height: 266px;
+	width:426px;
+}
+
+#mainPic {
+	top:-24px;
+}
+#bkPic1 {
+	left:-64px;
+	top:-282px;
+}
+#bkPic2 {
+	left:64px;
+	top:-580px;
+}
+
+/* Post It
+******************************/
+.postIt {
+	margin-bottom: 16px;
+	width: 504px;
+}
+.postIt p {
+	height: 48px;
+	font-size: 14px;
+	padding-left:32px;
+	padding-top: 8px;
+	width: 240px;
+}
+
+/* コンテンツ部分
+******************************/
+.itemMenu {
+    display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 40px 60px 10px 60px;
+	width: 500px;
+}
+
+.cardHead {
+	height:40px;
+	width:150px;	
+}
+.cardHead h1 {
+	font-family: Chalkduster;
+	font-size:20px;
+	margin-left:12px;
+}
+
+.cardGroup {
+	height: 40px;
+	margin-left: 12px;
+	width:80px;
+}
+.cardClip {
+	height: 64px;
+	width:64px;
+	margin: -30px 0 0 90px;
+}
+
+.card {
+    height: 240px;
+	padding-top:10px;
+	margin-bottom: 10px;
+	width: 150px;
+}
+
+.bkCard {
+	height: 240px;
+	width: 150px;
+}
+
+.card img {
+	width: 130px;
+	height: 190px;
+}
+.card h2 {
+    margin:4px 10px 2px 10px;
+	font-size:14px;
+	width:140px;
+	height:18px;
+}
+.card p {
+	margin: 0px 10px;
+    font-size: 12px;
+}
+
+.itemS {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	width:500px;
+	margin: 0px 60px 4px 60px;
+}
+
+.cardPin img {
+	width:48px;
+	height:48px;
+	margin-top:-252px;
+}
+
+/* フッター
+******************************/
+
+.footerBorder img {
+	height: 6px;
+	width:500px;
+	margin: 30px 60px 30px;
+}
+
+.footerAddress {
+	width: 240px;
+	height: 240px;
+	margin-left:60px;
+}
+
+.footerAddress ul {
+	width:200px;
+	list-style: none;
+	margin-left:24px;
+	margin-top:36px;
+}
+
+.footerAddress p {
+	font-size:14px;
+}
+
+.cardMap {
+	top:-20px;
+	left:80px;
+	height: 230px;
+	width:330px;
+}
+
+.cardMap iframe {
+	position: relative;
+	height:200px;
+	width:300px;
+	margin: 15px 15px;
+}
+
+.pinMap {
+	position:relative;
+	margin:-480px 0px 0px 153px;
+	height: 32px;
+	width: 32px;
+}
+
+.footer_navigation {
+	width:200px;
+	height:240px;
+	margin: -20px 0px 0px 80px;
+}
+
+.footer_navigation ul {
+	font-size:24px;
+	margin: 30px 36px 0px 0px;
+	line-height: 1.3em;
+}
+
+
+
+
+/* コピーライト */
+.copyright {
+	font-size: 14px;
+	margin:30px 0 30px 60px;
+}
+
+/* 詳細ページ用
+******************************/
+
+.content{
+	position:relative;
+	width: 500px;
+	margin: 96px 60px 25px 60px;
+}
+
+/*　Blog　メニュー */
+.blog {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width:120px;
+	float: right;
+	margin: -36px 0px 0px 0px;
+}
+
+.blog img {
+	width:68px;
+	height:46px;
+}
+
+.blog p {
+	color: #FF7BAC;
+	font-family:"huifontpregular";
+	font-size:14px;
+	margin: 6px 0px 12px 0px;
+	padding:18px 0px 18px 8px;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.5);	
+	text-decoration: none;
+	cursor:pointer;
+}
+
+.postY {
+	background:url(../img/postYellow.png) no-repeat;
+}
+
+.postB {
+	background:url(../img/postBlue.png) no-repeat;
+}
+
+
+/* メインコンテンツ */
+.mainText {
+	position: relative;
+	background: url(../img/itemPaper.png) no-repeat;
+	background-size: contain;
+	font-family:"huifontpregular";
+	padding:40px 18px 24px 40px;
+	height: 322px;
+	width:340px;
+}
+
+.mainText h1 {
+	font-size:22px;
+	margin-bottom:6px;
+}
+
+.mainText p {
+	font-size:14px;
+	margin-bottom:8px;
+	line-height: 1.5em;
+}
+
+.YYYYMMDD {
+	font-size: 14px;
+	color: #FF7BAC;
+}
+
+.green {
+	position:absolute;
+	width:341px;
+	height:513px;
+	top:-81px;
+	left:54px;
+}
+
+.itemPicPair {
+	width:500px;
+	margin: 48px 0 12px 0;
+	display:flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.itemCheki {
+	width:237px;
+}
+
+.itemPin {
+	width:48px;
+	height:48px;
+	margin: 0px 95px;
+	margin-top:-660px;
+}
+
+.itemPic {
+	background:#FFFFFF;
+	padding:37px 18px;
+	width: 237px;
+	height:338px;
+	box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.6);
+}
+
+

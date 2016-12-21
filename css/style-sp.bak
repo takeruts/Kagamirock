@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+
+/* 基本レイアウト
+******************************/
+.wrapper {
+	width: 300px;
+}
+
+
+/*ヘッダー部分
+******************************/
+/* サイト名 */
+.title {
+	float: none;
+}
+.title img {
+	height: auto;
+}
+
+
+/* ヘッダー部分
+******************************/
+/* ナビゲーションメニュー */
+.navigation {
+	position: absolute;
+    top: -300px; /*通常時はビュー外*/
+	right: 0;
+	width: 50%;
+	/*background: rgba(0,0,0,.7);*/
+	transition: .5s ease-in-out;
+	text-align: left;
+}
+.navigation ul {
+	margin: 0;
+}
+.navigation li {
+	clear:both;
+	margin: 0;
+    font-size: 16px;
+	line-height: 2;
+}
+
+/* スライド設定
+******************************/
+.main_image img {
+	width: 300px;
+}
+#slideshow {
+	position: relative;
+	height: 130px;
+}
+
+
+
+/* テキストエリア
+******************************/
+.text_area {
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+/* コンテンツ部分
+******************************/
+.item {
+    display: flex;
+	flex-wrap:wrap;
+  	justify-content: space-around;
+}
+.item_box {
+	width: 140px;
+    height: 190px;
+}
+.item_box img {
+	width: 140px;
+}
+.item_box h2 {
+	font-size: 14px;
+}
+.item_box p {
+	font-size: 12px;
+}
+
+
+/* フッター
+******************************/
+.footer{
+    clear: both;
+}
+.footer_navigation li:nth-child(5) {
+	float: none;
+	display: block;
+}
+
+
+
+/* 詳細ページ用
+******************************/
+.content{
+	width: 300px;
+	margin-bottom: 25px;
+}
+.content p {
+	clear:both;
+	margin-right:0;
+}
+.content_txt_box{
+	width:100%;
+}
+.content_img_box {
+	width:100%;
+	margin-bottom:25px;
+}
+.content_img_box img{
+	width:100%;
+}
+
+
+/* トグルボタン設定
+******************************/
+#navToggle {
+    position: absolute;/*to body*/
+    top: 20px;
+    right: 20px;
+	display: block;	
+	width: 30px;
+	height: 25px;
+	cursor: pointer;
+}
+#navToggle div {
+	position: relative
+}
+#navToggle span {
+    position: absolute;/*to div*/
+	display: block;	
+	width: 100%;
+	border-bottom: solid 3px #86b12e;
+	transition: .35s ease-in-out
+}
+#navToggle span:nth-child(1) {
+	top: 0
+}
+#navToggle span:nth-child(2) {
+	top: 11px
+}
+#navToggle span:nth-child(3) {
+	top: 22px
+}
+
+
+/* トグルボタンアニメーション設定 */
+.openNav #navToggle span:nth-child(1) {
+	top: 11px;
+	transform: rotate(-45deg);
+}
+.openNav #navToggle span:nth-child(2), .openNav #navToggle span:nth-child(3) {
+	top: 11px;
+	transform: rotate(45deg);
+}
+
+/*header menu*/
+.openNav nav {
+	transform: translateY(350px);
+}
+
+

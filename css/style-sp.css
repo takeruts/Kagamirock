@@ -1,0 +1,439 @@
+@charset "utf-8";
+
+
+/* 基本レイアウト
+******************************/
+.wrapper {
+	width: 300px;
+}
+
+/* ヘッダー部分
+******************************/
+/* SNSピン */
+.snsPins {
+	width: 270px;
+}
+.snsPins img {
+	height: 28px;
+	width:28px;
+}
+
+
+/* タイトル */
+.title {
+	margin-top: 0px;
+}
+.title img {
+	width: 270px;
+}
+
+.navigation {
+	margin: 0 auto;
+	width:840px;
+}
+
+
+/* ナビゲーションメニュー */
+.navigation {
+	position: absolute;
+    top: -300px; /*通常時はビュー外*/
+	right: 15px;
+	width: 120px;
+	/*background: rgba(0,0,0,.7);*/
+	transition: .5s ease-in-out;
+	background-image: url(../img/../img/bgCorkW.jpg);
+	opacity: 0.7;
+	z-index: 20;
+}
+.navigation ul {
+	display: block;
+	padding-top:12px;
+	font-size: 18px;
+	text-align: right;
+}
+
+.navigation li {
+	clear:both;
+	margin: 0;
+    font-size: 16px;
+	line-height: 2;
+}
+
+/* スライド設定
+******************************/
+.main_image {
+	height: 120px;
+	width:240px;
+	margin-bottom:24px;
+}
+
+.mainPicPin {
+	width: 60px;
+}
+.mainPicPin img {
+	height: 17px;
+	width: 14px;
+}
+
+.main_image img {
+	height: 150px;
+	width:240px;
+}
+
+#mainPic {
+	top:-24px;
+}
+#bkPic1 {
+	display: none;
+}
+#bkPic2 {
+	display: none;
+}
+
+/* Post It
+******************************/
+.postIt {
+	flex-wrap:wrap;
+	width: 240px;
+	margin-left:30px;
+}
+.postIt p {
+	height: 40px;
+	font-size: 14px;
+	padding-left:32px;
+	padding-top: 4px;
+	width: 240px;
+}
+#postIt1 {
+	margin-bottom: 3px;
+}
+
+
+/* コンテンツ部分
+******************************/
+.itemMenu {
+	flex-wrap: wrap;
+	margin: 8px 15px 12px 15px;
+	width: 270px;
+}
+
+.cardMenu {
+	margin: 0 auto;
+	position:relative;
+	z-index: 10;
+}
+
+.cardHead {
+	margin-top:12px;
+	height:40px;
+	width:150px;
+}
+.cardHead h1 {
+	font-size:20px;
+	margin-left:12px;
+}
+
+.cardGroup {
+	height: 40px;
+	margin-left: 12px;
+	width:80px;
+}
+.cardClip {
+	height: 64px;
+	width:64px;
+	margin: -28px 0 0 90px;
+}
+
+.card {
+    height: 240px;
+	padding-top:10px;
+	margin-bottom: 10px;
+	width: 150px;
+}
+
+.bkCard {
+	height: 240px;
+	width:150px;
+}
+
+.card img {
+	width: 130px;
+	height: 190px;
+}
+.card h2 {
+    margin:4px 10px 2px 10px;
+	font-size:14px;
+	width:140px;
+	height:18px;
+}
+.card p {
+	margin: 0px 10px;
+    font-size: 12px;
+}
+
+
+.itemS {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	width:300px;
+	margin: 0 0;
+}
+
+#itemS1 {
+	position: absolute;
+	top: 700px;
+	margin:0 auto;
+	z-index: 10;
+}
+
+#itemS2 {
+	position: absolute;
+	top: 1000px;
+	margin:0 auto;
+	z-index: 10;
+}
+
+#itemS3 {
+	position: absolute;
+	top: 1300px;
+	margin:0 auto;
+	z-index: 10;
+}
+
+.cardPin img {
+	width:36px;
+	height:36px;
+	margin-top:-246px;
+}
+
+/* フッター
+******************************/
+
+.footerBorder img {
+	height: 6px;
+	width:270px;
+	margin: 0px 15px 6px;
+}
+
+.footerAddress {
+	width: 240px;
+	height: 240px;
+	margin: 0 30px;
+}
+
+.footerAddress ul {
+	width:200px;
+	list-style: none;
+	margin-left:24px;
+	margin-top:36px;
+}
+
+.footerAddress p {
+	font-size:14px;
+}
+
+.cardMap {
+	top:60px;
+	left:0px;
+	height: 190px;
+	width:270px;
+}
+
+.cardMap iframe {
+	position: relative;
+	height:160px;
+	width:240px;
+	margin: 15px 15px;
+}
+
+.pinMap {
+	position:relative;
+	margin:-400px 0px 0px 135px;
+	height: 32px;
+	width: 32px;
+}
+
+.footer_navigation {
+	width:200px;
+	height:240px;
+	margin: -72px 50px 0px 50px;
+}
+
+.footer_navigation ul {
+	font-size:24px;
+	margin: 30px 36px 0px 0px;
+	line-height: 1.3em;
+}
+
+
+
+
+/* コピーライト */
+.copyright {
+	font-size: 14px;
+	margin:30px 0 30px 15px;
+}
+
+
+/* 詳細ページ用
+******************************/
+
+.content{
+	position:relative;
+	width: 270px;
+	margin: 24px 15px 12px 15px;
+}
+
+/*　Blog　メニュー */
+.blog {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width:270px;
+	margin: 0px 0px 36px 0px;
+}
+
+.blog img {
+	width:45px;
+	height:31px;
+	margin-right:120px;
+}
+
+.blog p {
+	color: #FF7BAC;
+	font-family:"huifontpregular";
+	font-size:10px;
+	margin: 6px 0px 12px 0px;
+	padding:18px 0px 18px 8px;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.5);	
+	text-decoration: none;
+	cursor:pointer;
+	width:120px;
+}
+
+.postY {
+	background:url(../img/postYellow.png) no-repeat;
+}
+
+.postB {
+	background:url(../img/postBlue.png) no-repeat;
+}
+
+/* メインコンテンツ */
+.mainText {
+	clear:both;
+	position: relative;
+	background: url(../img/itemPaper.png) no-repeat;
+	background-size: contain;
+	font-family:"huifontpregular";
+	padding:36px 18px 24px 24px;
+	height: 260px;
+	width:280px;
+	margin:0 auto;
+	margin-bottom:24px;
+}
+
+.mainText h1 {
+	font-size:20px;
+	margin-bottom:6px;
+}
+
+.mainText p {
+	font-size:14px;
+	margin-bottom:6px;
+	line-height: 1.3em;
+}
+
+.YYYYMMDD {
+	font-size: 14px;
+	color: #FF7BAC;
+}
+
+.green {
+	position:absolute;
+	width:300px;
+	height:400px;
+	top:-60px;
+	left:36px;
+}
+
+.itemPicPair {
+	width:270px;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 24px;
+}
+
+.itemCheki {
+	margin: 0 auto;
+	width:237px;
+}
+
+.itemPin {
+	width:48px;
+	height:48px;
+	margin: 0px 95px;
+	margin-top:-660px;
+}
+
+.itemPic {
+	background:#FFFFFF;
+	padding:37px 18px;
+	width: 237px;
+	height:338px;
+	box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.6);
+}
+
+
+/* トグルボタン設定
+******************************/
+#navToggle {
+    position: absolute;/*to body*/
+    top: 20px;
+    right: 20px;
+	display: block;	
+	width: 30px;
+	height: 25px;
+	cursor: pointer;
+}
+#navToggle div {
+	position: relative
+}
+#navToggle span {
+    position: absolute;/*to div*/
+	display: block;	
+	width: 100%;
+	border-bottom: solid 3px #42210B;
+	opacity: 0.7;
+	transition: .35s ease-in-out
+}
+#navToggle span:nth-child(1) {
+	top: 0
+}
+#navToggle span:nth-child(2) {
+	top: 11px
+}
+#navToggle span:nth-child(3) {
+	top: 22px
+}
+
+
+/* トグルボタンアニメーション設定 */
+.openNav #navToggle span:nth-child(1) {
+	top: 11px;
+	transform: rotate(-45deg);
+}
+.openNav #navToggle span:nth-child(2), .openNav #navToggle span:nth-child(3) {
+	top: 11px;
+	transform: rotate(45deg);
+}
+
+/*header menu*/
+.openNav nav {
+	transform: translateY(350px);
+}
+
+

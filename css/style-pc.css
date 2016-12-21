@@ -1,0 +1,501 @@
+@charset "utf-8";
+
+
+/* Web フォント */
+
+
+/*
+* 位置情報系 (position, top, right, z-index, display, float等)
+* サイズ (width, height, padding, margin)
+* 文字系 (font, line-height, letter-spacing, color-text-align等)
+* 背景 (background, border等)
+* その他 (animation, transition等)
+*/
+
+
+/* 基本レイアウト
+******************************/
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 10px 0;
+	font: 14px "ヒラギノ丸ゴ ProN W4", "Hiragino Maru Gothic ProN", "メイリオ", Sans-Serif;
+	background: url(../img/bgCorkW.jpg) repeat;
+}
+.wrapper {
+	width: 960px;
+	margin: 0 auto;
+	font-smoothing: antialiased;
+	background-color: rgba(198,92,0,0.07);
+}
+
+/* ヘッダー部分
+******************************/
+.header {
+	margin-bottom: 36px;
+    overflow: hidden;
+}
+
+/* SNSピン */
+.snsPins {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	margin: 0 auto;
+	padding-top:0px;
+	width: 840px;
+}
+
+.snsPins img {
+	height: 56px;
+	width:56px;
+}
+
+/* サイト名 */
+.title {
+	margin-top: -12px;
+}
+.title img {
+	display: block;
+	margin: 0 auto;
+	width: 840px;
+	opacity: 0.8;
+}
+/* ナビゲーション */
+.navigation {
+	margin: 0 auto;
+	width:840px;
+}
+.navigation ul {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	padding-top:36px;
+	font-size: 26px;
+}
+
+.navigation li a {
+	color:#42210B;
+	opacity: 0.7;
+}
+.navigation li a:hover {
+	color:#42210B;
+	opacity: 1;
+}
+
+
+/* スライド設定
+******************************/
+.main_image {
+	display: block;
+	height: 360px;
+	margin: 0 auto;
+	width:640px;
+}
+
+
+.mainPicPin {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 360px;
+}
+.mainPicPin img {
+	height: 50px;
+	width: 40px;
+	z-index: 5;
+}
+
+.main_image img {
+	height: 400px;
+	position: relative;
+	width:640px;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);
+}
+
+#mainPic {
+	top:-36px;
+	z-index: 3;
+}
+#bkPic1 {
+	left:-96px;
+	opacity:0.6;
+	top:-424px;
+	z-index: 2;
+}
+#bkPic2 {
+	left:96px;
+	opacity: 0.6;
+	top:-860px;
+	z-index: 1;
+}
+
+/* Post It
+******************************/
+.postIt {
+	display:flex;
+	flex-wrap:nowrap;
+	justify-content: space-between;
+	margin: 24px auto;
+	position: relative;
+	width: 756px;
+	z-index: 6;
+}
+.postIt p {
+    color: #FF7BAC;
+	font: 22px 'huifontpregular';
+	height: 72px;
+	padding-left:48px;
+	padding-top: 12px;
+	width: 362px;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);	
+}
+#postIt1 {
+	background: url(../img/postYellow.png) no-repeat;
+}
+#postIt2 {
+	background: url(../img/postBlue.png) no-repeat;
+}
+
+
+/* コンテンツ部分
+******************************/
+.itemMenu {
+    display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	margin: 60px 60px 15px 60px;
+	width: 840px;
+}
+
+.cardMenu {
+	position:relative;
+}
+
+.cardHead {
+	position: relative;
+	height:60px;
+	width:256px;
+	z-index: 1;
+}
+.cardHead h1 {
+	color:#42210B;
+	font-family: Chalkduster;
+	font-size:30px;
+	margin-left:18px;
+	opacity: 0.7;
+}
+
+.cardGroup {
+	height: 60px;
+	margin-left: 20px;
+	width:120px;
+	opacity: 0.75;
+}
+.cardClip {
+	width:96px;
+	height: 96px;
+	margin: -30px 0 0 165px;
+}
+
+.card {
+	background-color:#ffffff;
+	font-family: 'huifontpregular';
+    height: 402px;
+	padding-top:30px;
+	position: relative;
+	margin-bottom: 15px;
+	width: 256px;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);
+}
+
+.bkCard {
+	width: 256px;
+	height:402px;
+	background-color: white;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);
+}
+
+.card img {
+	display:block;
+	width: 220px;
+	height: 300px;
+	margin: 0 auto;
+}
+.card h2 {
+    margin:12px 18px 3px 18px;
+	color: #AA4880;
+	font-size:22px;
+	width:220px;
+	height:30px;
+}
+.card p {
+	color: #AA4880;
+	margin: 0px 18px;
+    font-size: 16px;
+	text-align: right;
+}
+
+.bkCard1 {
+	position:absolute;
+	left:3px;
+	top:3px;
+	z-index:-1;
+}
+.bkCard2 {
+	position:absolute;
+	left:6px;
+	top:6px;
+	z-index:-2;
+}
+.bkCard3 {
+	position:absolute;
+	left:9px;
+	top:9px;
+	z-index:-3;
+}
+
+.itemS {
+	display:flex;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	width:840px;
+	margin: 0px 60px 12px 60px;
+}
+
+.itemS .card {
+	display: none;
+	box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.3);	
+}
+
+.cardPin img {
+	width:64px;
+	height:64px;
+	margin-top:-402px;
+}
+
+
+/* フッター
+******************************/
+.footer{
+}
+
+.footerBorder img {
+	height: 8px;
+	width:840px;
+	margin: 0px 60px 60px;
+	opacity: 0.55;
+}
+
+.footerAddress {
+	background:url(../img/footerAddress.png) no-repeat;
+	background-size:contain;
+	display: block;
+	float: left;
+	height: 320px;
+	margin-left:60px;
+	position: relative;
+	width: 460px;
+}
+
+.footerAddress ul {
+	width:360px;
+	list-style: none;
+	margin-left:40px;
+	margin-top:80px;
+}
+
+.footerAddress ul li {
+}
+
+.footerAddress p {
+	font-family:"huifontpregular";
+	font-size:26px;
+	line-height: 1.4em;
+	text-align: left;
+}
+
+.footerAddress ul:hover {
+	color:lightgray;
+	cursor: pointer;
+}
+
+.opTime {
+	color:#FF7BAC;	
+}
+
+.telephone {
+	color:black;
+}
+
+.cardMap {
+	position:absolute;
+	display: none;
+	top:-60px;
+	left:120px;
+	opacity:1;
+	box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.6);
+	background: #ffffff;
+	height: 430px;
+	width:630px;
+	z-index: 5;
+	
+}
+
+.cardMap iframe {
+	position: relative;
+	margin: 15px 15px;
+}
+
+.pinMap {
+	position:relative;
+	margin:-876px 0px 0px 315px;
+}
+
+.footer_navigation {
+	position: relative;
+	float: left;
+	width:300px;
+	height:380px;
+	background: url(../img/footerMenu.png) no-repeat;
+	background-size: contain;
+	margin: -20px 0px 0px 80px;
+}
+
+.footer_navigation ul {
+	font-family: "huifontpregular";
+	font-size:36px;
+	text-align: right;
+	list-style: none;
+	margin: 60px 48px 0px 0px;
+	line-height: 1.2em;
+}
+
+.footer_navigation li a {
+	color:#42210B;
+}
+
+.footer_navigation li a:hover {
+	color:#D76B23;
+}
+
+
+/* コピーライト */
+.copyright {
+	position: relative;
+	clear:both;
+	font-size: 18px;
+	font-family: "Cabin", sans-serif;
+	font-weight: 600;
+	margin:30px 0 30px 80px;
+	color:#42210B;
+	opacity:0.7;
+}
+
+
+/* 詳細ページ用
+******************************/
+
+.content{
+	position:relative;
+	width: 840px;
+	margin: 96px 60px 25px 60px;
+}
+
+/*　Blog　メニュー */
+.blog {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width:240px;
+	float: right;
+	margin: 0px 0px 0px 0px;
+}
+
+.blog img {
+	width:102px;
+	height:70px;
+}
+
+.blog p {
+	color: #FF7BAC;
+	font-family:"huifontpregular";
+	font-size:18px;
+	margin: 6px 0px 12px 0px;
+	padding:24px 0px 24px 24px;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);	
+	text-decoration: none;
+	cursor:pointer;
+}
+
+.postY {
+	background:url(../img/postYellow.png) no-repeat;
+}
+
+.postB {
+	background:url(../img/postBlue.png) no-repeat;
+}
+
+
+/* メインコンテンツ */
+.mainText {
+	position: relative;
+	background: url(../img/itemPaper.png) no-repeat;
+	background-size: contain;
+	font-family:"huifontpregular";
+	padding:64px 60px 24px 60px;
+	height: 484px;
+	width:510px;
+}
+
+.mainText h1 {
+	font-size:28px;
+	margin-bottom:10px;
+}
+
+.mainText p {
+	font-size:22px;
+	margin-bottom:12px;
+	line-height: 1.5em;
+}
+
+.YYYYMMDD {
+	font-size: 18px;
+	color: #FF7BAC;
+}
+
+.green {
+	position:absolute;
+	top:-118px;
+	left:78px;
+}
+
+.itemPicPair {
+	width:840px;
+	margin: 48px 0 12px 0;
+	display:flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
+
+.itemCheki {
+	width:356px;
+}
+
+.itemPin {
+	margin: 0px 136px;
+	margin-top:-988px;
+}
+
+.itemPic {
+	background:#FFFFFF;
+	padding:37px 18px;
+	width: 356px;
+	height:507px;
+	box-shadow: 6px 6px 6px 6px rgba(0,0,0,0.3);
+}
+
+

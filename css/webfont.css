@@ -1,0 +1,40 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'huifontregular';
+    src: url('./font/HuiFont29.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'huifontpregular';
+    src: url('./font/HuiFontP29.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Chalkduster';
+    src: url('./font/Chalkduster.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.huifontregular
+{
+    font-family: huifontregular;
+/*    text-shadow: 0 0 1px rgba(0,0,0,0.3); /* アンチエイリアシング */
+}
+
+.huifontpregular
+{
+    font-family: huifontpregular;
+/*    text-shadow: 0 0 1px rgba(0,0,0,0.3); /* アンチエイリアシング */
+}
+
+.chalkduster {
+	font-family: chalkduster;
+}
